@@ -1,0 +1,73 @@
+#include <stdio.h>
+
+int getChoice(int count){
+    int turn;
+    if(count%2 == 0)
+        turn = 1;
+    else
+        turn = 2;
+    int choice;
+    printf("Player %i, Choose a space: ",turn);
+    scanf("%i", &choice);
+    return(choice);
+}
+
+int markBoard(choice1)
+{
+    //if()
+    
+    
+    
+    
+}
+
+int drawBoard(int choice2, int symbol)
+{
+    printf("\tTick Tack Toe\n   Player 1 (X)\tPlayer 2 (0)\n\n\t");
+    char xoRay[9] ={'1','2','3','4','5','6','7','8','9'};
+    
+    if(choice2 != 69)
+    {
+        if(symbol==0)
+        char xoRay[choice2] = 'X'
+        
+
+    }
+    
+    for(int k =0;k<3;++k)
+        printf("  %c",xoRay[k]);
+    printf("\n\t");
+    for(int k =3;k<6;++k)
+            printf("  %c",xoRay[k]);
+    printf("\n\t");
+    for(int k =6;k<9;++k)
+            printf("  %c",xoRay[k]);
+
+    return 0;      
+}
+
+/*int checkForWin(int choiceNumber)
+{
+    int choices[9] = {0};
+    if(((choices[0] && choices[1] && choices[2]) || (choices[3] && choices[4] && choices[5]) || (choices[6] && choices[7] && choices[8]))==1)
+        return(0);
+    else
+        return(1);
+        
+}*/
+
+
+int main()
+{
+    drawBoard(69);
+    int count = 0;
+    int = userChoice;
+    while(count<9){
+        userChoice = getChoice(count);
+        
+    }
+    
+  
+  
+    return 0;
+}
